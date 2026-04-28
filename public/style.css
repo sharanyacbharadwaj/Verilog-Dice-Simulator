@@ -1,0 +1,68 @@
+/* General layout */
+body {
+  background-color: #121212;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding-top: 60px;
+}
+
+/* Title */
+h1 {
+  font-size: 2.2em;
+  color: #ff4d4d;
+  text-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+/* Roll button */
+button {
+  background: linear-gradient(145deg, #ff4d4d, #ff0000);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.2em;
+  padding: 12px 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(145deg, #ff6666, #ff1a1a);
+  transform: scale(1.05);
+}
+
+/* LED container */
+.led-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 150px;
+  margin: 40px auto;
+}
+
+/* Individual LEDs */
+.led {
+  width: 35px;
+  height: 35px;
+  margin: 7px;
+  border-radius: 50%;
+  background-color: #333;
+  box-shadow: inset 0 0 5px #000;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* LED ON state */
+.on {
+  background-color: #ff0000;
+  box-shadow: 0 0 20px #ff0000, 0 0 40px #ff3333;
+}
+
+/* Result text */
+#result {
+  margin-top: 10px;
+  font-size: 1.5em;
+  color: #00ff88;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
